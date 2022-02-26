@@ -1,0 +1,76 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Arca Majora Bold;
+  src: url(../fonts/Arca_Majora/arcamajora3-bold-webfont.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Arca Majora Heavy;
+  src: url(../fonts/Arca_Majora/arcamajora3-heavy-webfont.ttf)
+    format('truetype');
+}
+
+@font-face {
+  font-family: Aretha;
+  src: url(../fonts/Aretha/aretha_-_light-webfont.ttf) format('truetype');
+}
+
+body {
+  background: #050a30;
+  color: white;
+  font-family: Aretha;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  font-family: Arca Majora Bold;
+  font-size: 4rem;
+  top: 50%;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  font-family: Aretha;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo > img {
+  width: 12%;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.icons > a {
+  margin-right: 1rem;
+}
