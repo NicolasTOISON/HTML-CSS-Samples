@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #050a30;
+}
+
+nav {
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav > ul {
+  margin: auto;
+}
+
+nav > ul > li {
+  display: inline;
+  list-style-type: none;
+  margin: 2.5rem 2.5rem;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: inherit;
+  display: inline-block;
+}
+
+a:hover {
+  color: white;
+}
+
+/* Slide from middle to extremity */
+a::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+a:hover::after {
+  transform: scale(1);
+  background: white;
+}
+
+/* Slide from left to right */
+.slide > a::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 0%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: width 0.2s ease-in-out;
+}
+
+.slide > a:hover::after {
+  width: 100%;
+  background: white;
+}
