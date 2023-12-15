@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+h3 {
+  margin: 0 0 0.5rem;
+}
+button {
+  font-size: 1.6rem;
+  padding: 1.3rem 1.7rem 0.9rem;
+  border-radius: 3px;
+  border: 3px solid #d72b2b;
+  background: #000;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+dialog::backdrop {
+  background: #fff5;
+  backdrop-filter: blur(4px);
+}

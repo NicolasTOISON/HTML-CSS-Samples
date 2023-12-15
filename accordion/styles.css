@@ -1,0 +1,14 @@
+summary::marker {
+  font-size: 1em;
+  content: "➕";
+}
+[open] summary::marker {
+  font-size: 1em;
+  content: "➖";
+}
+/*The following rules aim to help our visitors realise that it's clickable like a button*/
+summary:hover,
+summary:focus {
+  cursor: pointer;
+  background: deeppink;
+}
